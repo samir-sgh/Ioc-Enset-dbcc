@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 @Service("metier")
 public class MetierImpl implements IMetier {
-
+    @Autowired
     private IDao dao;
 
     public MetierImpl(@Qualifier("dao") IDao dao) {
